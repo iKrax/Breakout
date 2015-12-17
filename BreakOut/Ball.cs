@@ -57,7 +57,7 @@ namespace BreakOut
                     break;
 
                 case direction.Down:
-                    if (currentBallLocation.y < Console.WindowHeight - 4)
+                    if ((currentBallLocation.y < Console.WindowHeight - 4) && ((Bat.currentBatLocation - currentBallLocation.x <= 0) && (Bat.currentBatLocation - currentBallLocation.x >= -8)))
                     {
                         currentBallLocation.y++;
                     }
@@ -110,7 +110,7 @@ namespace BreakOut
                         currentBallLocation.y++;
                         currentBallLocation.x--;
                     }
-                    else if (!(currentBallLocation.y < Console.WindowHeight - 4))
+                    else if (!(currentBallLocation.y < Console.WindowHeight - 4) && ((Bat.currentBatLocation - currentBallLocation.x <= 0) && (Bat.currentBatLocation - currentBallLocation.x >= -8)))
                     {
                         currentBallDirection = direction.Up_Left;
                         goto case direction.Up_Left;
@@ -128,7 +128,7 @@ namespace BreakOut
                         currentBallLocation.y++;
                         currentBallLocation.x++;
                     }
-                    else if (!(currentBallLocation.y < Console.WindowHeight - 4))
+                    else if (!(currentBallLocation.y < Console.WindowHeight - 4) && ((Bat.currentBatLocation - currentBallLocation.x <= 0) && (Bat.currentBatLocation - currentBallLocation.x >= -8)))
                     {
                         currentBallDirection = direction.Up_Right;
                         goto case direction.Up_Right;
