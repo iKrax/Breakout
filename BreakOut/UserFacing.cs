@@ -7,7 +7,10 @@ public enum direction { Up, Down, Left, Right, Up_Left, Up_Right, Down_Left, Dow
     Breakout (CONSOLE) v0.1 by iKrax
 
     Based upon the game Atari Breakout, the player controls a bat which is used to deflect
-    a ball into blocks to gain points.
+    a ball into blocks to gain points..
+
+    Future Updates
+    TO BE UPDATED
 */
 namespace BreakOut
 {
